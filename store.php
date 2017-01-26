@@ -12,8 +12,8 @@ echo mysql_error();
 }
 $aname = $_POST['aname'];
 $adetails = $_POST['adetails'];
-$aphoto = addslashes (file_get_contents($_FILES['aphoto']['tmp_name']));
-$image = getimagesize($_FILES['aphoto']['tmp_name']);//to know about image type etc
+//$aphoto = addslashes (file_get_contents($_FILES['aphoto']['tmp_name']));
+//$image = getimagesize($_FILES['aphoto']['tmp_name']);
 
 $imgtype = $image['mime'];
 
